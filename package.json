@@ -1,0 +1,19 @@
+{
+  "name": "id-service",
+  "version": "1.0.0",
+  "description": "A REST service for sequential IDs",
+  "main": "idServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sequential",
+    "ID"
+  ],
+  "author": "Matthias Walter",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "express": "^4.14.1",
+    "pg": "^6.1.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "port": 8081,
+    "db": {
+        "user": "yourname",
+        "password": "yourpassword",
+        "host": "localhost",
+        "postgresPort": 5432,
+        "database": "yourdatabase",
+        "idleTimeoutMillis": 30000
+    }
+}
