@@ -5,17 +5,16 @@ This REST-service returns an incrementing ID stored in a PostgreSQL DB
 ## Install
 
 Get the current version.
-Install a database and create a table (column must be named "currentid")
 
+Create a database
 ```sql
 CREATE DATABASE id_generator
   WITH OWNER = myowner
        ENCODING = 'UTF8'
        TABLESPACE = pg_default
-       LC_COLLATE = 'German, Germany'
-       LC_CTYPE = 'German, Germany'
        CONNECTION LIMIT = -1;
 ```
+Create a table (column must be named "currentid")
 ```sql
 CREATE TABLE id
 (
@@ -27,11 +26,11 @@ WITH (
 ALTER TABLE id
   OWNER TO myowner;
 ```
+Add a value into your created table
 ```sql
 INSERT INTO id VALUES (1);
 ```
 
-Add a value into your created table
 Adjust config.json to fit your db configuration
 
 ## Start
